@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex to Minecraft RGB Converter</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Hex to Minecraft RGB Converter</h1>
+    
+    <div class="container">
+        <div class="input-group">
+            <label for="hexInput">Enter Hex Color Code:</label>
+            <input type="text" id="hexInput" placeholder="e.g., #3498db or 3498db" value="#3498db">
+        </div>
+        
+        <button onclick="convertColor()">Convert</button>
+        
+        <div class="result" id="result">
+            <p><strong>Minecraft RGB Values:</strong> <span id="rgbValue">R: 0.20, G: 0.60, B: 0.86</span></p>
+            <div class="color-preview" id="colorPreview" style="background-color: #3498db;"></div>
+            
+            <div class="minecraft-block">
+                <div class="face top" id="blockTop" style="background-color: #3498db;"></div>
+                <div class="face front" id="blockFront" style="background-color: #3498db;"></div>
+                <div class="face right" id="blockRight" style="background-color: #3498db;"></div>
+            </div>
+        </div>
+        
+        <div class="common-colors">
+            <h3>Common Minecraft Colors:</h3>
+            <div class="color-grid" id="colorGrid">
+                <!-- Color swatches will be loaded from js/colors.js -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/colors.js"></script>
+    <script src="js/converter.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
