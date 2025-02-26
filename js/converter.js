@@ -45,10 +45,14 @@ function convertColor() {
     const minecraftG = (g / 255).toFixed(2);
     const minecraftB = (b / 255).toFixed(2);
     
+    // Calculate decimal representation (Similar to Minecraft wiki)
+    // Formula: (r * 65536) + (g * 256) + b
+    const decimalValue = (r << 16) + (g << 8) + b;
+    
     // Update the result
     document.getElementById('rgbValue').textContent = `R: ${minecraftR}, G: ${minecraftG}, B: ${minecraftB}`;
-    document.getElementById('javaCode').textContent = `new Color(${minecraftR}F, ${minecraftG}F, ${minecraftB}F)`;
-    document.getElementById('command').textContent = `/particle dust ${minecraftR} ${minecraftG} ${minecraftB} 1 ~ ~ ~ 0 0 0 0 1`;
+    document.getElementById('int8Value').textContent = `R: ${r}, G: ${g}, B: ${b}`;
+    document.getElementById('decimalValue').textContent = decimalValue;
     
     // Update the color preview
     document.getElementById('colorPreview').style.backgroundColor = hexValue;

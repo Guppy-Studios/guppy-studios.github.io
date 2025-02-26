@@ -43,7 +43,7 @@ input[type="text"] {
 }
 
 button {
-    background-color: #3498db;
+    background-color: #8d9ac6;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -54,7 +54,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #7589c5;
 }
 
 /* Result section */
@@ -63,7 +63,7 @@ button:hover {
     padding: 15px;
     border-radius: 4px;
     background-color: #f9f9f9;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #8d9ac6;
     padding-bottom: 60px;
     overflow: visible;
     position: relative;

@@ -12,13 +12,15 @@
     <div class="container">
         <div class="input-group">
             <label for="hexInput">Enter Hex Color Code:</label>
-            <input type="text" id="hexInput" placeholder="e.g., #3498db or 3498db" value="#3498db">
+            <input type="text" id="hexInput" placeholder="e.g., #8d9ac6 or 8d9ac6" value="#8d9ac6">
         </div>
         
         <button onclick="convertColor()">Convert</button>
         
         <div class="result" id="result">
             <p><strong>Minecraft RGB Values:</strong> <span id="rgbValue">R: 0.20, G: 0.60, B: 0.86</span></p>
+            <p><strong>RGB Values (0-255):</strong> <span id="int8Value">R: 52, G: 152, B: 219</span></p>
+            <p><strong>Decimal Representation:</strong> <span id="decimalValue">3447003</span></p>
             <div class="color-preview" id="colorPreview" style="background-color: #3498db;"></div>
             
             <div class="minecraft-block">
